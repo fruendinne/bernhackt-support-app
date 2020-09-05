@@ -1,6 +1,20 @@
 <template>
   <v-app>
-    <v-app-bar app>
+    <v-app-bar color="white" app>
+      <v-img
+          class="mx-2"
+          src="./assets/Quickline_Logo_RGB_positiv.png"
+          max-height="40"
+          max-width="80"
+          contain
+      ></v-img>
+      <v-spacer></v-spacer>
+      <v-icon class="pa-2" color="black">
+        mdi-magnify
+      </v-icon>
+      <v-icon color="black">
+        mdi-menu
+      </v-icon>
     </v-app-bar>
     <v-main>
       <v-container class="fill-height align-start">
@@ -11,7 +25,7 @@
           <div>
             <v-row>
               <v-col>
-                <div v-ripple class="sexschen-button">
+                <div class="sexschen-button">
                   <v-avatar class="ma-2" size="96">
                     <img
                         src="https://quickline.ch/media/r0uc4oce/icon_nav_internet.png"
@@ -21,7 +35,7 @@
                 </div>
               </v-col>
               <v-col>
-                <div v-ripple class="sexschen-button">
+                <div class="sexschen-button">
                   <v-avatar class="ma-2" size="96">
                     <img
                         src="https://quickline.ch/media/liyhf3en/icon_nav_tv.png"
@@ -33,7 +47,7 @@
             </v-row>
             <v-row>
               <v-col>
-                <div v-ripple class="sexschen-button">
+                <div class="sexschen-button">
                   <v-avatar class="ma-2" size="96">
                     <img
                         src="https://quickline.ch/media/iv4eq3t3/icon_nav_mobile.png"
@@ -43,7 +57,7 @@
                 </div>
               </v-col>
               <v-col>
-                <div v-ripple class="sexschen-button">
+                <div class="sexschen-button">
                   <v-avatar class="ma-2" size="96">
                     <img
                         src="https://quickline.ch/media/og4jau2b/icon_nav_festnetz.png"
