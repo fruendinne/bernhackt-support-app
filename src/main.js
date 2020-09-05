@@ -3,6 +3,7 @@ import App from './App.vue';
 import router from './router';
 import store from './store';
 import vuetify from './plugins/vuetify';
+import { getNextTLB, startFlow } from './services/api'
 
 Vue.config.productionTip = false;
 
@@ -12,3 +13,7 @@ new Vue({
   vuetify,
   render: h => h(App),
 }).$mount('#app');
+
+startFlow('Mein Internet kabut')
+  .then(flow => getNextTLB(flow))
+  .then(console.log)
