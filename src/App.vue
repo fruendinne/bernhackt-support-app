@@ -56,7 +56,7 @@
 
                                         <v-stepper-content step="3">
                                             <v-card class="mb-12 stepper--card" height="300px">
-                                                <OnboardingCustomerNumber/>
+                                                <OnboardingLoading/>
                                             </v-card>
                                             <v-col class="d-flex justify-end">
                                                 <v-btn medium text color="primary" @click="e6 = 2">Zurück</v-btn>
@@ -64,13 +64,15 @@
                                             </v-col>
                                         </v-stepper-content>
 
-                                        <v-stepper-step step="4">Schritt 4</v-stepper-step>
+                                        <v-stepper-step step="4">Überprüfung ist fertig</v-stepper-step>
                                         <v-stepper-content step="4">
                                             <v-card class="mb-12 stepper--card" height="300px">
-                                                <OnboardingCustomerNumber/>
+                                                TODO
                                             </v-card>
-                                            <v-btn color="primary" @click="e6 = 1">Continue</v-btn>
-                                            <v-btn text>Cancel</v-btn>
+                                            <v-col class="d-flex justify-end">
+                                                <v-btn medium text color="primary" @click="e6 = 3">Zurück</v-btn>
+                                                <v-btn medium color="accent" @click="e6 = 4">Weiter</v-btn>
+                                            </v-col>
                                         </v-stepper-content>
                                     </v-stepper>
                                 </v-app>
@@ -86,10 +88,11 @@
 <script>
     import OnboardingCustomerNumber from './views/OnboardingCustomerNumber';
     import OnboardingProblemGeneral from './views/OnboardingProblemGeneral';
+    import OnboardingLoading from './views/OnboardingLoading';
 
     export default {
         name: 'App',
-        components: { OnboardingCustomerNumber, OnboardingProblemGeneral },
+        components: { OnboardingCustomerNumber, OnboardingProblemGeneral, OnboardingLoading },
         data() {
             return {
                 e6: 1,
