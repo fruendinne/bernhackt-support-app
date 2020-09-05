@@ -1,23 +1,19 @@
 <template>
-    <v-app>
-        <v-container>
+    <div class="d-flex flex-column">
+        <v-row no-gutters>
             <v-col>
-                <v-row no-gutters>
-                    <v-col>
-                        <h2 class="text-hyphens">Verbindungsüberprüfung</h2>
-                        <p class="text-hyphens">Lassen Sie ihre Verbindung auf mögliche Störungen überprüfen. Wenn Sie
-                            das nicht möchten,
-                            können Sie die Verbindungsprüfung überspringen.</p>
-                        <h3 class="text-hyphens">Geben Sie Ihre Kundennummer ein</h3>
-                        <v-text-field
-                                color="primary"
-                                label="Kundennummer">
-                        </v-text-field>
-                    </v-col>
-                </v-row>
+                <h2 class="text-hyphens">Verbindungsüberprüfung</h2>
+                <p class="text-hyphens">Lassen Sie ihre Verbindung auf mögliche Störungen überprüfen. Wenn Sie
+                    das nicht möchten,
+                    können Sie die Verbindungsprüfung überspringen.</p>
+                <h3 class="text-hyphens">Geben Sie Ihre Kundennummer ein</h3>
+                <v-text-field
+                  color="primary"
+                  label="Kundennummer">
+                </v-text-field>
             </v-col>
-        </v-container>
-    </v-app>
+        </v-row>
+    </div>
 </template>
 
 <script>
