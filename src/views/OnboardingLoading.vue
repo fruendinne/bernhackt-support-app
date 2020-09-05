@@ -5,7 +5,7 @@
             <v-col class="pr-5 pr-sm-0">
                 <v-progress-linear
                   indeterminate
-                  color="red"
+                  color="accent"
                   rounded
                   height="6"
                   class="progress--bar"

@@ -28,8 +28,7 @@
                     <v-stepper-content step="2">
                         <OnboardingCustomerNumber/>
                         <v-row no-gutters class="justify-end">
-                            <v-btn medium text color="primary" @click="e6 = 4">Überspringen</v-btn>
-<!--                            <v-btn medium text color="primary" @click="e6 = 1">Zurück</v-btn>-->
+                            <v-btn text @click="e6 = 4">Überspringen</v-btn>
                             <v-btn medium color="accent" @click="e6 = 3">Weiter</v-btn>
                         </v-row>
                     </v-stepper-content>
@@ -37,18 +36,14 @@
                     <v-stepper-step :complete="e6 > 3" step="3">Überprüfung ist am Laufen</v-stepper-step>
                     <v-stepper-content step="3">
                         <OnboardingLoading v-if="e6 === 3" @ready="e6 = 4"/>
-<!--                        <div class="d-flex justify-end">-->
-<!--                            <v-btn medium text color="primary" @click="e6 = 2">Zurück</v-btn>-->
-<!--                            <v-btn medium color="accent" @click="e6 = 4">Weiter</v-btn>-->
-<!--                        </div>-->
                     </v-stepper-content>
 
                     <v-stepper-step step="4">Überprüfung ist fertig</v-stepper-step>
                     <v-stepper-content step="4">
                       <RProjibliesmies/>
                       <v-row no-gutters class="justify-end">
-                            <v-btn medium text color="primary" @click="e6 = 3">Zurück</v-btn>
-                            <v-btn medium color="accent" @click="e6 = 4">Weiter</v-btn>
+                            <v-btn text @click="e6 = 3">Zurück</v-btn>
+                            <v-btn color="accent" @click="e6 = 4">Weiter</v-btn>
                         </v-row>
                     </v-stepper-content>
                 </v-stepper>
