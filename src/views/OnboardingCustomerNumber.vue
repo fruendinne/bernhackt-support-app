@@ -8,7 +8,7 @@
                         <p class="text-hyphens">Lassen Sie ihre Verbindung auf mögliche Störungen überprüfen. Wenn Sie
                             das nicht möchten,
                             können Sie die Verbindungsprüfung überspringen.</p>
-                        <h3 class="text-hyphens">Geben Sie Ihre Kundennummer ein</h3>
+                        <h3 class="text-hyphens">Wie lautet Ihre Kundennummer?</h3>
                         <v-text-field
                                 color="primary"
                                 label="Kundennummer">

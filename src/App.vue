@@ -19,10 +19,7 @@
         <v-main>
             <v-container class="fill-height pa-0">
                 <v-stepper v-model="e6" vertical class="elevation-0">
-                    <v-stepper-step :complete="e6 > 1" step="1">
-                        Wo liegt das Problem?
-                    </v-stepper-step>
-
+                    <v-stepper-step :complete="e6 > 1" step="1">Wo liegt das Problem?</v-stepper-step>
                     <v-stepper-content step="1">
                         <v-card class="mb-12 stepper--card">
                             <OnboardingProblemGeneral/>
@@ -32,9 +29,7 @@
                         </v-col>
                     </v-stepper-content>
 
-                    <v-stepper-step :complete="e6 > 2" step="2">Verbindungsüberprüfung
-                    </v-stepper-step>
-
+                    <v-stepper-step :complete="e6 > 2" step="2">Verbindungsüberprüfung</v-stepper-step>
                     <v-stepper-content step="2">
                         <v-card class="mb-12 stepper--card" height="300px">
                             <OnboardingCustomerNumber/>
@@ -46,9 +41,7 @@
                         </v-col>
                     </v-stepper-content>
 
-                    <v-stepper-step :complete="e6 > 3" step="3">Überprüfung ist am Laufen
-                    </v-stepper-step>
-
+                    <v-stepper-step :complete="e6 > 3" step="3">Überprüfung ist am Laufen</v-stepper-step>
                     <v-stepper-content step="3">
                         <v-card class="mb-12 stepper--card" height="300px">
                             <OnboardingLoading/>
@@ -62,11 +55,11 @@
                     <v-stepper-step step="4">Überprüfung ist fertig</v-stepper-step>
                     <v-stepper-content step="4">
                         <v-card class="mb-12 stepper--card" height="300px">
-                            TODO
+                            <RProjibliesmies/>
                         </v-card>
                         <v-col class="d-flex justify-end">
                             <v-btn medium text color="primary" @click="e6 = 3">Zurück</v-btn>
-                            <v-btn medium color="accent" @click="e6 = 4">Weiter</v-btn>
+                            <v-btn medium color="accent" @click="e6 = 5">Weiter</v-btn>
                         </v-col>
                     </v-stepper-content>
                 </v-stepper>
@@ -76,13 +69,16 @@
 </template>
 
 <script>
+
+
     import OnboardingCustomerNumber from './views/OnboardingCustomerNumber';
     import OnboardingProblemGeneral from './views/OnboardingProblemGeneral';
     import OnboardingLoading from './views/OnboardingLoading';
+    import RProjibliesmies from '@/views/R-projibliesmies';
 
     export default {
         name: 'App',
-        components: { OnboardingCustomerNumber, OnboardingProblemGeneral, OnboardingLoading },
+        components: { OnboardingCustomerNumber, OnboardingProblemGeneral, OnboardingLoading, RProjibliesmies },
         data() {
             return {
                 e6: 1,
