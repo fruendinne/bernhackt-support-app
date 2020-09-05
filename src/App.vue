@@ -31,3 +31,7 @@
         name: 'App',
     };
 </script>
+
+<style lang="scss">
+    @import "sass/variables";
+</style>
