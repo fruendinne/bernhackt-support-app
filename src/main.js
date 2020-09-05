@@ -13,7 +13,3 @@ new Vue({
   vuetify,
   render: h => h(App),
 }).$mount('#app');
-
-startFlow('Mein Internet kabut')
-  .then(flow => getNextTLB(flow))
-  .then(console.log)
