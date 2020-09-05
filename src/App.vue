@@ -55,9 +55,19 @@
                                             <v-card class="mb-12 stepper--card" height="300px">
                                                 <OnboardingCustomerNumber/>
                                             </v-card>
-                                            <v-btn color="primary" @click="e6 = 1">Continue</v-btn>
+                                            <v-btn color="primary" @click="e6 = 5">Continue</v-btn>
                                             <v-btn text>Cancel</v-btn>
                                         </v-stepper-content>
+                                      <v-stepper-step step="5">Schritt 5</v-stepper-step>
+                                      <v-stepper-content step="5">
+                                        <v-card class="mb-12 stepper--card" height="300px">
+                                          <RProjibliesmies>
+
+                                          </RProjibliesmies>
+                                        </v-card>
+                                        <v-btn color="primary" @click="e6 = 1">Continue</v-btn>
+                                        <v-btn text>Cancel</v-btn>
+                                      </v-stepper-content>
                                     </v-stepper>
                                 </v-app>
                             </div>
@@ -71,10 +81,11 @@
 
 <script>
     import OnboardingCustomerNumber from './views/OnboardingCustomerNumber';
+    import RProjibliesmies from "@/views/R-projibliesmies";
 
     export default {
         name: 'App',
-        components: { OnboardingCustomerNumber },
+        components: {RProjibliesmies, OnboardingCustomerNumber },
         data() {
             return {
                 e6: 1,
