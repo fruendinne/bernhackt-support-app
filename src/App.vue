@@ -1,8 +1,12 @@
 <template>
-  <div id="app">
-    <router-view/>
-  </div>
+  <v-app>
+    <v-main>
+    </v-main>
+  </v-app>
 </template>
 
-<style lang="scss">
-</style>
+<script>
+export default {
+  name: 'App',
+};
+</script>
