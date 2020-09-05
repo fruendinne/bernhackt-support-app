@@ -18,10 +18,10 @@
     </v-app-bar>
     <v-main>
       <v-container class="fill-height align-start">
-        <v-row no-gutters class="flex-grow-0">
-          <h3>Zu welchem Thema brauchen Sie Hilfe?</h3>
-        </v-row>
         <v-col>
+        <v-row no-gutters class="my-10">
+          <h3 class="skinnybitchpretty font-weight-light">Zu welchem Thema brauchen Sie Hilfe?</h3>
+        </v-row>
           <div>
             <v-row>
               <v-col>
@@ -88,4 +88,9 @@ export default {
   color: #d40037;
   font-size: 1.25rem;
 }
+.skinnybitchpretty{
+  font-size: 2rem;
+  text-align: center;
+}
+
 </style>
