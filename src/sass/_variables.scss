@@ -1,0 +1,55 @@
+@import url("https://use.typekit.net/jbh2vjg.css");
+
+$body-font-family: "Europa" !important;
+
+html,
+body,
+.v-application,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $body-font-family;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 24px;
+
+    @media screen and(max-width: 960px) {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 12px;
+
+    @media screen and(max-width: 960px) {
+        font-size: 28px;
+        margin-bottom: 8px;
+    }
+}
+
+h3 {
+    font-size: 32px;
+    margin-bottom: 12px;
+
+    @media screen and(max-width: 960px) {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+}
+
+.v-application p {
+    font-size: 24px;
+    margin-bottom: 32px;
+
+    @media screen and(max-width: 960px) {
+        font-size: 20px;
+        margin-bottom: 24px;
+    }
+}
