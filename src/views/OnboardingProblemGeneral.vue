@@ -1,7 +1,7 @@
 <template>
     <div class="d-flex flex-column">
         <v-row no-gutters>
-            <h3>Zu welchem Thema brauchen Sie Hilfe?</h3>
+            <h3>Zu welchem Thema benötigen Sie Hilfe?</h3>
         </v-row>
         <div>
             <v-row>

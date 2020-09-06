@@ -31,7 +31,12 @@
         </v-expansion-panel>
       </v-expansion-panels>
 
-      <v-card class="mt-5" color="accent" dark v-if="">
+      <v-card class="mt-5" color="green" dark v-if="flow && flow.state === Flow.STATE_SUCCESSFUL">
+        <v-card-title>Geschafft!</v-card-title>
+        <v-card-text>Ruf mich an, Dadday</v-card-text>
+      </v-card>
+
+      <v-card class="mt-5" color="accent" dark v-if="flow && flow.state === Flow.STATE_UNSUCCESSFUL">
         <v-card-title>Ich weiss nicht mehr weiter.</v-card-title>
         <v-card-text>Ruf mich an, Dadday</v-card-text>
       </v-card>
@@ -41,6 +46,7 @@
 
 <script>
 import {mapState} from 'vuex';
+import { Flow } from '../services/api'
 
 export default {
   name: 'Troubleshooting',
@@ -48,6 +54,7 @@ export default {
     return {
       panels: 0,
       loading: false,
+      Flow,
     }
   },
   computed: {
@@ -70,14 +77,14 @@ export default {
   methods: {
     async nextTLB() {
       this.loading = true
-      return this.$store.dispatch('nextTLB')
-        .then(() => {
-          this.loading = false
-          this.panels = this.steps.length - 1
-        })
+      await this.$store.dispatch('nextTLB')
+      this.loading = false
+      this.panels = this.steps.length - 1
+      if (this.flow && this.flow.state === Flow.STATE_UNSUCCESSFUL) this.panels = -1
     },
     async setSuccess() {
       await this.$store.dispatch('setSuccess')
+      this.panels = -1
     }
   }
 }
