@@ -8,8 +8,10 @@ project
 │
 └───code
 │   └───backend  # Django project with REST API
+│          README.md # Setup guide & overview for backend
 │   └───frontend # Vue.js frontend
-│   
+│          README.md # Setup guide for frontend
+│
 └───documentation
 │      file021.txt
 │

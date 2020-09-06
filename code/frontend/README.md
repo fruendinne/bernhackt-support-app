@@ -1,4 +1,7 @@
-# bernhackt-support-app
+# Quickline Support Frontend
+
+## Prerequisites - Development
+Expects the backend in '../backend' to be running on the local machine on port 8000.
 
 ## Project setup
 ```
@@ -14,11 +17,3 @@ yarn serve
 ```
 yarn build
 ```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
