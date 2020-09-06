@@ -52,13 +52,13 @@ class Command(BaseCommand):
 
         tlb1 = TroubleshootingLogicBlock.objects.create(
             title="Router neu starten",
-            content="Um den Router neu zu starten entfernen Sie das Stromkabel zum Router für mindestens 30 Sekunden.",
+            content="Um den Router neu zu starten, entfernen Sie das Stromkabel zum Router für mindestens 30 Sekunden.",
         )
         tlb1.tags.add(*(tags_restart + tags_redlight))
 
         tlb2 = TroubleshootingLogicBlock.objects.create(
             title="Glasfaserkabel Anschluss überprüfen",
-            content="Stellen Sie sicher, dass das Glasfaserkabel korrekt mit dem Modem und der Glasfaserdose verbunden ist. Beim einstecken des Kabels sollte ein Klickgeräusch hörbar sein.",
+            content="Stellen Sie sicher, dass das Glasfaserkabel korrekt mit dem Modem und der Glasfaserdose verbunden ist. Beim Einstecken des Kabels sollte ein Klickgeräusch hörbar sein.",
         )
         tlb2.tags.add(*tags_fiber)
 
@@ -66,14 +66,14 @@ class Command(BaseCommand):
 
         tlb3 = TroubleshootingLogicBlock.objects.create(
             title="Den Router auf Werkseinstellungen zurücksetzen",
-            content="Drücken Sie die Reset Taste an Ihrem Router bis die LED gelb blinkt. Warten Sie bis die LED grün blinkt."
+            content="Drücken Sie die Reset Taste an Ihrem Router bis die LED gelb blinkt. Warten Sie, bis die LED grün blinkt."
         )
         # NO TAGS YET
         tlb2.successors.add(tlb3)
 
         tlb4 = TroubleshootingLogicBlock.objects.create(
-            title="Üperprüfen Sie ob sie total den Verstand verloren haben",
-            content="Steht ein pinkes Einhorn in ihrem Wohnzimmer? Haben die Menschen in Ihrem Umfeld mehr als 2 Augen? Falls Sie eine dieser Fragen mit Ja beanworten dann empfehlen wir Ihnen unseren Support nicht zu kontaktieren.",
+            title="Üperprüfen Sie, ob Sie total den Verstand verloren haben :-)",
+            content="Steht ein pinkes Einhorn in ihrem Wohnzimmer? Haben die Menschen in Ihrem Umfeld mehr als 2 Augen? Falls Sie eine dieser Fragen mit Ja beanworten, dann empfehlen wir Ihnen, unseren Support nicht zu kontaktieren.",
         )
         tlb4.tags.add(*tags_fiber)
         tlb4.successors.add()
@@ -81,7 +81,7 @@ class Command(BaseCommand):
 
         tlb5 = TroubleshootingLogicBlock.objects.create(
             title="Mit dem WLAN verbinden",
-            content="Auf der Unterseite Ihres Routers finden Sie den Namen Ihres WLANs (SSID) und das dazugehörige Passwort. Stellen SIe sicher, dass Sie sich mit dem korrekten WLAN verbunden haben.",
+            content="Auf der Unterseite Ihres Routers finden Sie den Namen Ihres WLANs (SSID) und das dazugehörige Passwort. Stellen Sie sicher, dass Sie sich mit dem korrekten WLAN verbunden haben.",
         )
         tlb5.tags.add(*tags_wifi)
         tlb5.successors.add(tlb1)
@@ -94,7 +94,7 @@ class Command(BaseCommand):
 
         tlb7 = TroubleshootingLogicBlock.objects.create(
             title="Einloggen in das Konfigrationsmenü des Routers",
-            content="Den korrekten Benutzername und Passwort finden Sie auf der Unterseite Ihres Routers.",
+            content="Den korrekten Benutzernamen und das korrekte Passwort finden Sie auf der Unterseite Ihres Routers.",
         )
         tlb7.tags.add(*tags_config)
         tlb7.successors.add(tlb3)
@@ -132,7 +132,7 @@ class Command(BaseCommand):
 
         tlb12 = TroubleshootingLogicBlock.objects.create(
             title="Mein eigener Router verwenden.",
-            content="Um Ihren eigenen Router zu verwenden, müssen Sie diesen erst konfigurieren, diesen mit einem Ethernetkabel an einen `LAN` Port des Quickline Modem/Router verbinden.",
+            content="Um Ihren eigenen Router zu verwenden, müssen Sie diesen erst konfigurieren und mit einem Ethernetkabel an einen `LAN` Port des Quickline Modem/Router verbinden.",
         )
         #tlb12.tags.add(tags_fiber)
         tlb12.successors.add(tlb11)
