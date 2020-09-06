@@ -79,7 +79,7 @@ export default {
       this.loading = true
       await this.$store.dispatch('nextTLB')
       this.loading = false
-      this.panels = this.steps.length - 1
+      this.panels = [this.steps.length - 1]
       if (this.flow && this.flow.state === Flow.STATE_UNSUCCESSFUL) this.panels = -1
     },
     async setSuccess() {
