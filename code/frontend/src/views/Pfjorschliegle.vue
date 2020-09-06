@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="text-hyphens">Hmm...Auf den ersten Blick konnten wir nichts ungewöhnliches feststellen.</h2>
+    <h2 class="text-hyphens">Hmm... Auf den ersten Blick konnten wir nichts Ungewöhnliches feststellen.</h2>
     <h3 class="text-hyphens">Können Sie uns Ihr Problem schildern?</h3>
     <v-col>
     <v-row>
