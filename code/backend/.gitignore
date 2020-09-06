@@ -1,0 +1,8 @@
+*DS_Store
+*.pyc
+__pycache__
+notes.md
+db.sqlite3
+.idea/
+
+support/static/helppages
