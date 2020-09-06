@@ -13,7 +13,7 @@ project
 │          README.md # Setup guide for frontend
 │
 └───documentation
-│      file021.txt
+│      BernHackt_TechDocu_fruendinne.pdf
 │
 └───presentation
 │      file021.txt
