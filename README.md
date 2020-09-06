@@ -1,6 +1,8 @@
 # BärnHäckt 2020 - Quickline Support Challenge
 #### [BärnHäckt](https://www.bernhackt.ch/) - Team [Fründinne](https://www.fruendinne.ch/) 
 
+## Demo
+Find the demo at https://youtu.be/U6M3j1YMtJ8
 ## Folder Structure
 ```
 project
@@ -16,10 +18,7 @@ project
 │      BernHackt_TechDocu_fruendinne.pdf
 │
 └───presentation
-│      file021.txt
-│
-└───misc
-       file021.txt
+       BernHackt_2020_Presentation.pdf
 ```
 
 ## Contributors
