@@ -1,9 +1,14 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+import Onboarding from '../views/Onboarding'
 
 Vue.use(VueRouter);
 
 const routes = [
+  {
+    path: '/',
+    component: Onboarding
+  }
 ];
 
 const router = new VueRouter({
