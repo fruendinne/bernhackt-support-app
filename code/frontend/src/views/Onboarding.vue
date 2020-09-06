@@ -44,16 +44,15 @@
 
       <v-stepper-step step="4">Schnelltest abgeschlossen</v-stepper-step>
       <v-stepper-content step="4">
-        <RProjibliesmies/>
+        <OnboardingProblemCall/>
         <v-row no-gutters class="justify-end">
-          <v-btn text @click="step = 3">Zurück</v-btn>
-          <v-btn color="accent" @click="step = 5">Weiter</v-btn>
+          <v-btn color="accent" @click="step = 5">Absenden</v-btn>
         </v-row>
       </v-stepper-content>
 
       <v-stepper-step step="5" id="troubleshoot-step">Fehlerbehebung</v-stepper-step>
       <v-stepper-content step="5">
-        <Pfjorschliegle @input="startSearch"/>
+        <OnboardingProblemStatement @input="startSearch"/>
       </v-stepper-content>
     </v-stepper>
   </v-container>
@@ -63,8 +62,8 @@
   import OnboardingCustomerNumber from './OnboardingCustomerNumber';
   import OnboardingProblemGeneral from './OnboardingProblemGeneral';
   import OnboardingLoading from './OnboardingLoading';
-  import Pfjorschliegle from './Pfjorschliegle';
-  import RProjibliesmies from './R-projibliesmies';
+  import OnboardingProblemStatement from './OnboardingProblemStatement';
+  import OnboardingProblemCall from './OnboardingProblemCall';
 
   export default {
     name: 'Onboarding',
@@ -72,8 +71,8 @@
       OnboardingCustomerNumber,
       OnboardingProblemGeneral,
       OnboardingLoading,
-      Pfjorschliegle,
-      RProjibliesmies,
+      OnboardingProblemStatement,
+      OnboardingProblemCall,
     },
     data () {
       return {

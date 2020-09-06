@@ -72,7 +72,7 @@ class Command(BaseCommand):
         tlb2.successors.add(tlb3)
 
         tlb4 = TroubleshootingLogicBlock.objects.create(
-            title="Üperprüfen Sie, ob Sie total den Verstand verloren haben :-)",
+            title="Üperprüfen Sie, ob Sie den Verstand verloren haben :-)",
             content="Steht ein pinkes Einhorn in ihrem Wohnzimmer? Haben die Menschen in Ihrem Umfeld mehr als 2 Augen? Falls Sie eine dieser Fragen mit Ja beanworten, dann empfehlen wir Ihnen, unseren Support nicht zu kontaktieren.",
         )
         tlb4.tags.add(*tags_fiber)
@@ -116,7 +116,7 @@ class Command(BaseCommand):
 
         tlb10 = TroubleshootingLogicBlock.objects.create(
             title="Kundenportal login",
-            content="Besuchen Sie unsere Webseite `https://https://quickline.ch/` und klicken SIe auf `Login` oben rechts.",
+            content="Besuchen Sie unsere Webseite `https://https://quickline.ch/` und klicken Sie auf `Login` oben rechts.",
         )
         #tlb10.tags.add(tags_fiber)
         #tlb10.successors.add()
