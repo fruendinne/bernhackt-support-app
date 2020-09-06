@@ -29,9 +29,9 @@
         </v-row>
       </v-stepper-content>
 
-      <v-stepper-step step="5">Fehlerbehebung</v-stepper-step>
+      <v-stepper-step step="5" id="troubleshoot-step">Fehlerbehebung</v-stepper-step>
       <v-stepper-content step="5">
-        <Pfjorschliegle/>
+        <Pfjorschliegle @input="startSearch"/>
       </v-stepper-content>
     </v-stepper>
   </v-container>
@@ -66,8 +66,12 @@
       testFinished() {
         this.step = 5
         setTimeout(() => {
-          this.$vuetify.goTo('.v-stepper__step--active')
-        }, 500)
+          this.$vuetify.goTo('#troubleshoot-step')
+        }, 700)
+      },
+      startSearch(userQuery) {
+        this.$store.dispatch('startFlow', userQuery)
+        this.$router.push('troubleshooting')
       }
     }
   }
