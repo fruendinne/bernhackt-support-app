@@ -1,5 +1,5 @@
 # BärnHäckt 2020 - Quickline Support Challenge
-#### Team [Fründinne](https://www.fruendinne.ch/) 
+#### [BärnHäckt](https://www.bernhackt.ch/) - Team [Fründinne](https://www.fruendinne.ch/) 
 
 ## Folder Structure
 ```
