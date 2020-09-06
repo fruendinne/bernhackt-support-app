@@ -9,10 +9,9 @@
                        @click="$emit('select', 'internet')"
                 >
                     <div class="sexschen-button">
-                        <v-avatar class="ma-2" size="5rem">
-                            <img
-                              src="https://quickline.ch/media/r0uc4oce/icon_nav_internet.png"
-                              alt="internet">
+                        <v-avatar class="ma-2" size="5rem" color="gray">
+                          <img
+                              src="../assets/wifiicon.png">
                         </v-avatar>
                         <span>Internet</span>
                     </div>
@@ -21,11 +20,10 @@
                        @click="$emit('select', 'tv')"
                 >
                     <div class="sexschen-button">
-                        <v-avatar class="ma-2" size="5rem">
-                            <img
-                              src="https://quickline.ch/media/liyhf3en/icon_nav_tv.png"
-                              alt="TV">
-                        </v-avatar>
+                      <v-avatar class="ma-2" size="5rem" color="gray">
+                        <img
+                            src="../assets/tvicon.png">
+                      </v-avatar>
                         <span>TV</span>
                     </div>
                 </v-col>
@@ -33,11 +31,10 @@
                        @click="$emit('select', 'mobile')"
                 >
                     <div class="sexschen-button">
-                        <v-avatar class="ma-2" size="5rem">
-                            <img
-                              src="https://quickline.ch/media/iv4eq3t3/icon_nav_mobile.png"
-                              alt="mobile">
-                        </v-avatar>
+                      <v-avatar class="ma-2" size="5rem" color="gray">
+                        <img
+                            src="../assets/mobileicon.png">
+                      </v-avatar>
                         <span>Mobile</span>
                     </div>
                 </v-col>
@@ -45,11 +42,10 @@
                        @click="$emit('select', 'festnetz')"
                 >
                     <div class="sexschen-button">
-                        <v-avatar class="ma-2" size="5rem">
-                            <img
-                              src="https://quickline.ch/media/og4jau2b/icon_nav_festnetz.png"
-                              alt="festnetz">
-                        </v-avatar>
+                      <v-avatar class="ma-2" size="5rem" color="gray">
+                        <img
+                            src="../assets/festnetzicon.png">
+                      </v-avatar>
                         <span>Festnetz</span>
                     </div>
                 </v-col>
