@@ -1,0 +1,52 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quickline | Supportthemen</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .navbar-brand .navbar-brand-logo {
+            height: 60px;
+            width: 117px;
+            background-image: url({% static "images/quicklinelogo.svg" %});
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <div class="navbar-brand-logo"></div>
+        </a>
+        <span>Support-Themen</span>
+    </nav>
+
+    <div class="container mt-5">
+        <h2>Support-Themen</h2>
+        <h5>Sie haben ein Problem mit ihrem Quickline-Dienst? Hier finden Sie Lösungswege für häufige Probleme.</h5>
+
+        <div class="mt-5">
+            {% for slug in slugs %}
+                <div class="card mb-2">
+                    <div class="card-body">
+                        <a href="/static/helppages/{{ slug }}.html">
+                            {{ slug }}
+                        </a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

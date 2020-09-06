@@ -1,0 +1,54 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quickline | {{ flow.user_query }}</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .navbar-brand .navbar-brand-logo {
+            height: 60px;
+            width: 117px;
+            background-image: url({% static "images/quicklinelogo.svg" %});
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <div class="navbar-brand-logo"></div>
+        </a>
+        <span>Support-Artikel</span>
+    </nav>
+
+    <div class="container mt-5">
+        <h2>{{ flow.user_query }}</h2>
+        <h5>Sie haben ein Problem mit ihrem Quickline-Dienst? Hier ist eine Lösung, die anderen Quickline-Kunden geholfen hat:</h5>
+
+        <div class="mt-5">
+            {% for tlb in steps %}
+                <div class="card mb-2">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ tlb.title }}</h5>
+
+                        <p>
+                            {{ tlb.content | safe }}
+                        </p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

@@ -21,7 +21,7 @@
         mounted () {
             setTimeout(
               () => { this.$emit('ready') },
-              5000
+              3000
             )
         }
     };

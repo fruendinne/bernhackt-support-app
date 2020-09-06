@@ -6,16 +6,22 @@
       <h3 class="text-hyphens">Wie lautet Ihre Kundennummer?</h3>
       <v-text-field
         color="primary"
-        label="Kundennummer">
+        label="Kundennummer"
+        v-model="query"
+      >
       </v-text-field>
     </v-col>
   </v-row>
 </template>
 
 <script>
-    export default {
-        props: {},
-    };
+  export default {
+    data () {
+      return {
+        query: ''
+      }
+    },
+  };
 </script>
 
 <style lang="scss">
