@@ -33,12 +33,12 @@
 
             <v-card class="mt-5" color="green" dark v-if="flow && flow.state === Flow.STATE_SUCCESSFUL">
                 <v-card-title>Problem gelöst!</v-card-title>
-                <v-card-text>Wir hoffen, dass Sie Ihre Produkte von Quickline nun geniessen können.</v-card-text>
+                <v-card-text class="card--content">Wir hoffen, dass Sie Ihre Produkte von Quickline nun geniessen können.</v-card-text>
             </v-card>
 
             <v-card class="mt-5" color="accent" dark v-if="flow && flow.state === Flow.STATE_UNSUCCESSFUL">
                 <v-card-title>Wir wissen gerade auch nicht mehr weiter.</v-card-title>
-                <v-card-text>Unser technischer Support (Telefon 0800 84 10 20) wird Sie in den nächsten Minuten (sofern
+                <v-card-text class="card--content">Unser technischer Support (Telefon 0800 84 10 20) wird Sie in den nächsten Minuten (sofern
                     währen der Öffnungszeit) kontaktieren.
                     Für die Unannehmlichkeiten entschuldigen wir uns.
                 </v-card-text>
@@ -108,4 +108,9 @@
     .expansion-panel--caption {
         margin-right: 8px;
     }
+
+    .card--content {
+        font-size: 16px;
+    }
+
 </style>
